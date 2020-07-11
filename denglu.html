@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .main {
+        width: 100%;
+      }
+      .logo {
+        position: relative;
+      }
+      .logo img {
+        display: block;
+        width: 100%;
+      }
+      .denglu {
+        width: 28%;
+        position: absolute;
+        z-index: 2;
+        background-color: #fff;
+        top: 30%;
+        left: 55%;
+      }
+      .mid {
+        margin-left: 20px;
+        width: 85%;
+      }
+      .mid h4 {
+        padding-top: 20px;
+      }
+      .mid button {
+        background-color: #f93d69;
+        border: none;
+        color: white;
+        line-height: 30px;
+      }
+
+      .inp img {
+        width: 90px;
+      }
+      .inp .shoujihao input {
+        width: 100%;
+      }
+      .inp .dongtai button {
+        margin-left: 5px;
+      }
+      .deng {
+        width: 100%;
+        text-align: center;
+      }
+      .mid .bottom {
+        text-align: right;
+        line-height: 30px;
+        padding-bottom: 20px;
+      }
+      .mid .bottom a {
+        text-decoration: none;
+        color: #0d5b82;
+        font-size: 14px;
+        padding-left: 10px;
+      }
+      .mid .tishi {
+        display: none;
+        color: #f93d69;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <a href="javascript:void(0);" class="logo"
+        ><img src="./images/login_trendiano.jpg" alt=""
+      /></a>
+      <div class="denglu">
+        <div class="mid">
+          <h4>欢迎回来！请登录</h4>
+          <div class="inp">
+            <p class="shoujihao">
+              <input type="text" placeholder="手机号码" />
+            </p>
+            <p class="yanzheng">
+              <input type="text" name="" id="" placeholder="验证码" />
+              <img src="./images/kaptcha.jpg" alt="" />
+            </p>
+            <p class="dongtai">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="手机动态码"
+              /><button>获取动态码</button>
+            </p>
+          </div>
+          <div class="tishi">
+            <p></p>
+          </div>
+          <a href="javascript:void(0);" class="lu"
+            ><button class="deng">登录</button></a
+          >
+          <p class="bottom"><a href="">我要注册</a><a href="">忘记密码</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script>
+      var haoma = /^1[0-9]{10}$/;
+      $(".deng").click(function () {
+        var number = $(".inp .shoujihao input").val() * 1;
+        if (!haoma.test(number)) {
+          $(".tishi").css("display", "block");
+          $(".tishi p").text("手机号格式不正确");
+        } else {
+          $(".tishi").css("display", "block");
+          // $(".tishi p").text("手机号格式正确");
+          $(".lu").attr("href", "./index.html");
+        }
+      });
+    </script>
+  </body>
+</html>

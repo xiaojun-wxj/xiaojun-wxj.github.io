@@ -1,0 +1,109 @@
+.footer {
+  border-top: 4px solid #c1a75f;
+}
+.footer-top {
+  background-color: #1a1a1a;
+}
+.footer-top-box {
+  padding-bottom: 20px;
+}
+.footer-top-box h3 {
+  color: #a0a0a0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer-top-box a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+.date .weibo {
+  font-size: 24px;
+}
+.about ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+.about ul li {
+  margin-bottom: 10px;
+}
+.date .date-box {
+  padding-left: 0;
+}
+.date-box {
+  height: 291px;
+  padding-left: 70px;
+}
+.weixin .date-box {
+  border-left: 1px solid white;
+}
+.weixin .date-box a {
+  font-size: 12px;
+}
+.weixin .date-box a:hover {
+  color: #333;
+}
+.weixin .date-box a span {
+  color: #999;
+  font-size: 20px;
+}
+.brand .date-box {
+  border-left: 1px solid white;
+}
+.brand .date-box img {
+  display: block;
+  width: 90%;
+}
+.about .date-box {
+  border-left: 1px solid white;
+}
+.about ul li a {
+  color: #666;
+}
+.about ul li a:hover {
+  color: #333;
+}
+.about ul li span {
+  color: #b4b4b4;
+}
+.about ul li {
+  color: #666;
+}
+.footer-bottom {
+  background-color: black;
+  position: relative;
+  height: 100px;
+}
+.inner {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.footer-bottom .trend {
+  float: left;
+  font-size: 36px;
+  color: white;
+  margin-top: 10px;
+  padding-right: 80px;
+}
+
+.yinsi {
+  padding-top: 10px;
+  float: left;
+}
+.yinsi a {
+  text-decoration: none;
+  color: #777777;
+}
+.yinsi p {
+  color: #777777;
+}
+.yinsi .yinsi-text {
+  color: white;
+}
+.yinsi .yinsi-text:hover {
+  color: orange;
+}
+.yinsi p:last-child a:hover {
+  color: orange;
+}

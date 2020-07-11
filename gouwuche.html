@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/gouwuche.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="row">
+        <h1 class="col-md-9"><a href="">TRENDIANO</a></h1>
+        <div class="link col-md-3">
+          <ul class="clearfix">
+            <li><a href="">登录</a></li>
+            <li><a href="">注册</a></li>
+
+            <li><a href="" class="my">我的账户</a></li>
+            <li>
+              <span class="iconfont icon-addTodo-nav icon"></span
+              ><a href="">我的收藏</a>
+            </li>
+            <li>
+              <span class="iconfont icon-gouwudai icon"></span
+              ><a href="">购物袋<span>（<span>0</span>）</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row section-box">
+          <div class="section-top col-md-12">
+            <img src="./images/buy_step_1.png" alt="" />
+          </div>
+          <h4 class="col-md-12">购物袋</h4>
+          <div class="youhui col-md-12"><p>优惠：单笔消费，满699元免邮</p></div>
+          <div class="table col-md-12">
+            <table class="tab">
+              <thead>
+                <tr>
+                  <th class="col-md-1"></th>
+                  <th class="col-md-1"></th>
+                  <th class="col-md-3 mingcheng">商品名称</th>
+                  <th class="col-md-1">颜色/尺码</th>
+                  <th class="col-md-2">单价</th>
+                  <th class="col-md-2">数量</th>
+                  <th class="col-md-2">小计</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+        <div class="quanxuan row">
+          <div class="col-md-12">
+            <p class="page">1</p>
+            <a href=""
+              ><input type="checkbox" class="quanxuan" /><span>全选</span></a
+            >
+            <a href="javascript:void(0);" class="yixuan">删除已选</a>
+          </div>
+        </div>
+        <div class="jiesuan row">
+          <div class="col-md-12">
+            <p class="jianshu">已选：<span>0</span>件</p>
+            <p>总计金额（不含运费）：￥<span class="zongji">0.00</span></p>
+            <button>马上结算</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-box col-md-12">
+            <h2>TRENDIANO</h2>
+            <p><a href="">隐私申明</a><a href="">联系我们</a></p>
+            <p>
+              Copyright @ 2010- 广州赫基信息科技有限公司版权所有
+              增值电信业务经营许可证粤B2-20100553 粤ICP备10229258-
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script>
+      var goodsArr = [
+        {
+          goodsimg: "./images/gou1.jpg",
+          goodstext: [
+            {
+              name: "TRENDIANO",
+              fenlei: "英文标语印花短袖T恤",
+              huohao: "货号：3RC2022830018",
+            },
+          ],
+          goodssize: "白色/M",
+          goodsprice: "￥499.00",
+          goodsnumber: 1,
+          goodscount: "￥499.00",
+          regoods: [
+            "./images/gou1.jpg",
+            "./images/gou2.jpg",
+            "./images/gou3.jpg",
+          ],
+        },
+        {
+          goodsimg: "./images/gou2.jpg",
+          goodstext: [
+            {
+              name: "TRENDIANO",
+              fenlei: "英文标语印花短袖T恤",
+              huohao: "货号：3RC2022830018",
+            },
+          ],
+          goodssize: "橙色/M",
+          goodsprice: "￥499.00",
+          goodsnumber: 1,
+          goodscount: "￥499.00",
+          regoods: [
+            "./images/gou1.jpg",
+            "./images/gou2.jpg",
+            "./images/gou3.jpg",
+          ],
+        },
+        {
+          goodsimg: "./images/gou3.jpg",
+          goodstext: [
+            {
+              name: "TRENDIANO",
+              fenlei: "英文标语印花短袖T恤",
+              huohao: "货号：3RC2022830018",
+            },
+          ],
+          goodssize: "黑色/M",
+          goodsprice: "￥509.00",
+          goodsnumber: 1,
+          goodscount: "￥509.00",
+          regoods: [
+            "./images/gou1.jpg",
+            "./images/gou2.jpg",
+            "./images/gou3.jpg",
+          ],
+        },
+        {
+          goodsimg: "./images/gou4.jpg",
+          goodstext: [
+            {
+              name: "TRENDIANO",
+              fenlei: "英文标语印花短袖T恤",
+              huohao: "货号：3RC2022830018",
+            },
+          ],
+          goodssize: "绿色/M",
+          goodsprice: "￥499.00",
+          goodsnumber: 1,
+          goodscount: "￥499.00",
+          regoods: ["./images/gou4.jpg"],
+        },
+        {
+          goodsimg: "./images/gou5.jpg",
+          goodstext: [
+            {
+              name: "TRENDIANO",
+              fenlei: "英文标语印花短袖T恤",
+              huohao: "货号：3RC2022830018",
+            },
+          ],
+          goodssize: "白色/40",
+          goodsprice: "￥609.00",
+          goodsnumber: 1,
+          goodscount: "￥609.00",
+          regoods: ["./images/gou5.jpg"],
+        },
+      ];
+      var tbody = $("<tbody>");
+      for (var i = 0; i < goodsArr.length; i++) {
+        var tr = $("<tr >");
+        tr.html(`
+                  <td>
+                    <input type="checkbox" name="" id=""   class="duoxuan" />
+                  </td>
+                  <td>
+                    <a href=""><img src="${goodsArr[i].goodsimg}" alt="" /></a>
+                  </td>
+                  <td>
+                    <p>${goodsArr[i].goodstext[0].name}</p>
+                    <p><a href="">${goodsArr[i].goodstext[0].fenlei}</a></p>
+                    <p>${goodsArr[i].goodstext[0].huohao}</p>
+                  </td>
+                  <td class="yanse-size">
+                    <a href="javascript:void(0);" class="size"
+                      ><span>${goodsArr[i].goodssize}</span>
+                      <span class="iconfont icon-icon-down"></span
+                    ></a>
+                    <div class="size-box">
+                        <h3>选择颜色及尺码</h3>
+                        <div class="rechoose-area clearfix">
+                        </div>
+                        <div class="choose-btn">
+                          <button class="yes">确定</button
+                          ><button class="no">取消</button>
+                        </div>
+                      </div>
+                  </td>
+                  <td class="danjia"><p>${goodsArr[i].goodsprice}</p></td>
+                  <td>
+                    <div class="num-top">
+                      <span class="number">1</span>
+                      <a href="javascript:void(0);"><span class="iconfont icon-icon-down xia"></span> <span
+                        class="iconfont icon-menu-block-right-copy shang"
+                      ></span></a>
+
+                    </div>
+
+                    <div class="num-bottom">
+                      <a href="" class="shoucang">收藏</a>&nbsp;/&nbsp;<a
+                        class="shanchu"
+                        href="javascript:void(0);"
+                        >删除</a
+                      >
+                    </div>
+                  </td>
+                  <td class="xiaoji"><p class="xiaojiprice">${goodsArr[i].goodscount}</p></td>
+             `);
+        for (var j = 0; j < goodsArr[i].regoods.length; j++) {
+          var rechooseItem = $('<div class="rechoose-item">').html(`
+                            <p>
+                              <a href=""><img src="${goodsArr[i].regoods[j]}" alt=""></a>
+                            </p>
+                            <div class="choose-size clearfix">
+                              <a href="javascript:void(0)">S</a>
+                              <a href="javascript:void(0)">M</a>
+                              <a href="javascript:void(0)">L</a>
+                            </div>
+                          `);
+          tr.find(".rechoose-area").append(rechooseItem);
+        }
+        tr.find(".size-box").width(200 * goodsArr[i].regoods.length);
+        tbody.append(tr);
+      }
+
+      $(".tab").append(tbody);
+
+      var str;
+      var zong = 0;
+      var jie;
+      for (i = 1; i <= 5; i++) {
+        (function (arg) {
+          str = $("tbody tr:nth-child(" + arg + ")  .xiaoji p").text();
+          var price = parseInt(str.substring(1));
+          var sum = 1;
+
+          $(
+            "tbody tr:nth-child(" + arg + ") td:nth-child(6) .num-top .shang"
+          ).click(function () {
+            sum++;
+            $("tbody tr:nth-child(" + arg + ") td:nth-child(6) .num-top a")
+              .siblings()
+              .text(sum);
+            var counter = "￥" + sum * price + ".00";
+            var str = $("tbody tr:nth-child(" + arg + ")  .xiaoji p").text(
+              counter
+            );
+            total($(".duoxuan"));
+          });
+          $(
+            "tbody tr:nth-child(" + arg + ") td:nth-child(6) .num-top .xia"
+          ).click(function () {
+            if (sum > 1) {
+              sum--;
+            }
+
+            $("tbody tr:nth-child(" + arg + ") td:nth-child(6) .num-top a")
+              .siblings()
+              .text(sum);
+            var counter = "￥" + sum * price + ".00";
+            var str = $("tbody tr:nth-child(" + arg + ")  .xiaoji p").text(
+              counter
+            );
+            total($(".duoxuan"));
+          });
+
+          $("tbody tr:nth-child(" + arg + ") td:nth-child(6) .shanchu").click(
+            function () {
+              $("tbody tr:nth-child(" + arg + ")").remove();
+              total($(".duoxuan"));
+            }
+          );
+          $("tbody tr:nth-child(" + arg + ") td:nth-child(4) .size").click(
+            function () {
+              $(
+                "tbody tr:nth-child(" + arg + ") td:nth-child(4) .size-box"
+              ).css("display", "block");
+            }
+          );
+          $("tbody tr:nth-child(" + arg + ") td:nth-child(4)  .no").click(
+            function () {
+              $(
+                "tbody tr:nth-child(" + arg + ") td:nth-child(4) .size-box"
+              ).css("display", "none");
+            }
+          );
+        })(i);
+      }
+      $(".yixuan").click(function () {
+        for (j = 1; j <= 5; j++) {
+          if (
+            $("tbody tr:nth-child(" + j + ") .duoxuan ").prop("checked") == true
+          ) {
+            $("tbody tr:nth-child(" + j + ") ").remove();
+          }
+        }
+      });
+      $(".quanxuan").change(function () {
+        var allcheck = $(this).prop("checked");
+        $(".duoxuan").prop("checked", allcheck);
+        total($(".duoxuan"));
+      });
+      $(".duoxuan").change(function () {
+        var state = $(this).prop("checked");
+        if (state) {
+          var allchecked = true;
+          $(".duoxuan").each(function () {
+            if (!$(this).prop("checked")) {
+              allchecked = false;
+            }
+          });
+          $(".quanxuan").prop("checked", allchecked);
+        } else {
+          $(".quanxuan").prop("checked", false);
+        }
+        total($(".duoxuan"));
+      });
+      function total(duoxuan) {
+        var totalnum = 0;
+        var totalprice = 0;
+        duoxuan.each(function () {
+          if ($(this).prop("checked")) {
+            totalnum =
+              totalnum + $(this).parents("tr").find(".number").text() * 1;
+            console.log(totalnum);
+            var int = parseInt(
+              $(this).parents("tr").find(".xiaojiprice").text().substring(1, 4)
+            );
+            console.log(int);
+            totalprice = totalprice + int;
+          }
+        });
+        $(".jianshu span").text(totalnum);
+        $(".zongji").text(totalprice);
+      }
+    </script>
+  </body>
+</html>

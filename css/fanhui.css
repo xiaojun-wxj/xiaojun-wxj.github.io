@@ -1,0 +1,25 @@
+.fanhui {
+  width: 40px;
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  right: 40px;
+}
+
+.top a,
+.shouye a {
+  color: white;
+  text-decoration: none;
+}
+.fanhui .top {
+  text-align: center;
+  line-height: 36px;
+  background-color: black;
+  height: 36px;
+}
+.fanhui .shouye {
+  text-align: center;
+  background-color: orange;
+  display: block;
+  height: 38px;
+}

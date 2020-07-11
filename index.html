@@ -1,1 +1,562 @@
-<h1>ddddddd</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/fanhui.css">
+    <style>
+      .section .big{
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+      .section .big img{
+        width: 100%;
+        display: block;
+      }
+      .section .cell{
+        margin-bottom: 20px;
+      }
+     .section .cell img{
+       display: block;
+       width: 100%;
+       position: relative;
+     }
+     .section .cell a{
+       text-decoration: none;
+       color: white;
+     }
+     .section .cell a p{
+       width: 262px;
+       padding-left: 5px;
+       
+       position: absolute;
+       bottom: 0;
+      font-size: 18px;
+      text-shadow: 1px 1px 2px #666;
+      font-weight: 900;
+     
+      margin: 0; 
+      background-color: rgba(0,0,0,0,5);
+      transition: background-color 0.5s;
+     }
+     .section .cell a .p-tre{
+       width: 360px;
+     }
+     .section .cell a p:hover{
+      background-color: black;
+      opacity: 0.5;
+     }
+     .product{
+       margin-top: 60px;
+       margin-bottom: 20px;
+     }
+     .product p span{
+       font-size: 18px;
+       color: #717171;
+      
+     }
+     .product-img{
+       margin-bottom: 60px;
+     }
+     .product-img .t-shirt span{
+      
+       font-size: 16px;
+       color: #717171;
+       padding-left: 5px;
+       
+     }
+     .extra a{
+       display: block;
+       color: #717171;
+       float: right;
+       text-decoration: none;
+     }
+     .header{
+       display: block;
+     }
+     .header-bottom .first{
+       padding-left: 170px;
+     }
+     .two{
+       width: 100%;
+       display: none;
+       position: fixed;
+       z-index: 10;
+     }
+     .top {
+       display: none;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header-top col-md-12">
+            <div class="row">
+              <div class="logo col-md-7">
+                <h1><a href="" class="tre">TRENDIANO</a></h1>
+              </div>
+              <div class="reg-sea col-md-5">
+                <div class="row">
+                  <ul class="col-md-10 clearfix">
+                    <li><a href="./denglu.html">登录</a> <span class="shu">|</span></li>
+                    <li><a href="">注册</a> <span class="shu">|</span></li>
+                    <li><a href="" class="my">我的账户</a></li>
+                    <li>
+                      <span class="iconfont icon-addTodo-nav icon"></span
+                      ><a href="">我的收藏</a>
+                    </li>
+                    <li>
+                      <span class="iconfont icon-gouwudai icon"></span
+                      ><a href="./gouwuche.html">购物袋<span>[<span>0</span>]</span></a>
+                    </li>
+                  </ul>
+                  <div class="search col-md-6">
+                    <input type="text" name="" id="" class="find" placeholder="搜索您感兴趣的内容"/><span class="iconfont icon-sousuo"></span
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="header-bottom  clearfix">
+           <ul class="clearfix">
+            <li ><a href="" class="list">首页</a></li>
+             <li ><a href="" class="list">品牌动向</a></li>
+             <li ><a href="" class="list">新品资讯</a></li>
+             <li class="list-item"><a href="" class="list"> 春夏大减价</a>
+                  <div class="menu" data-index="3">
+            <div class="menu-box"><h4>BIG SALE</h4>
+            <div class="menu-bottom clearfix">
+             <ul>
+              <li><a href="">5.29主推款</a></li>
+              <li><a href="">6.11主推款</a></li>
+              <li><a href="">7折专区</a></li>
+              <li><a href="">8折专区</a></li>
+            </ul>
+            <ul>
+              <li><a href="" class="menu-bottom-right">9折专区</a></li>
+            </ul>
+           </div>
+          </div>
+          </div>
+             </li>
+             <li class="list-item"><a href="" class="list"> 到店新品</a>
+              <div class="menu">
+                <div class="menu-box"><h4>NEW IN</h4>
+                <div class="menu-bottom clearfix">
+                 <ul>
+                  <li><a href="">5月14号到店</a></li>
+                  <li><a href="">4月30号到店</a></li>
+                  <li><a href="">4月16号到店</a></li>
+                  <li><a href="">全部新品</a></li>
+                </ul>
+               </div>
+              </div>
+              </div>
+            </li>
+             <li class="list-item"><a href="" class="list">跨界合作 </a>
+              <div class="menu">
+                <div class="menu-box"><h4>IP</h4>
+                <div class="menu-bottom clearfix">
+                 <ul>
+                  <li><a href="">侏儒兔系列</a></li>
+                  <li><a href="">狮子王联名款</a></li>
+                </ul>
+               </div>
+              </div>
+              </div>
+            </li>
+             <li class="list-item"><a href="" class="list">特惠专区</a>
+              <div class="menu">
+                <div class="menu-box"><h4>VIP SALE</h4>
+                <div class="menu-bottom clearfix">
+                 <ul>
+                  <li><a href="">2件9折 3件8折</a></li>
+                  <li><a href="">秒杀专区</a></li>
+                  <li><a href="">新品秒杀</a></li>
+                </ul>
+               </div>
+              </div>
+              </div>
+            </li>
+             <li class="list-item"><a href="" class="list">服装</a>
+              <div class="menu">
+                <div class="menu-box"><h4>NEW IN_SHANG</h4>
+                <div class="menu-bottom clearfix">
+                 <ul>
+                  <li><a href="">T恤/POLO</a></li>
+                  <li><a href="">衬衫</a></li>
+                  <li><a href="">卫衣</a></li>
+                  <li><a href="">夹克</a></li>
+                </ul>
+                <ul>
+                  <li><a href="">夹克</a></li>
+                  <li><a href="">裤装</a></li>
+                  <li><a href="">风衣</a></li>
+                  <li><a href="">针织衫</a></li>
+                </ul>
+                <ul>
+                  <li><a href="">羽绒服</a></li>
+                  <li><a href="">棉衣</a></li>
+                  <li><a href="">毛呢大衣</a></li>
+                  <li><a href="">西服</a></li>
+                </ul>
+               </div>
+              </div>
+              </div></li>
+             <li class="list-item"><a href="" class="list">鞋/配饰</a>
+              <div class="menu">
+                <div class="menu-box"><h4>SHOES</h4>
+                <div class="menu-bottom clearfix">
+                 <ul>
+                  <li><a href="">休闲鞋</a></li>
+                  <li><a href="">凉鞋/拖鞋</a></li>
+                  <li><a href="">包包</a></li>
+                  <li><a href="">帽</a></li>
+                </ul>
+                <ul>
+                  <li><a href="">袜</a></li>
+                  <li><a href="">其他配饰</a></li>
+                </ul>
+               </div>
+              </div>
+              </div></li>
+             <li><p>客服营业时间 : 9:00-18:00</p></li>
+           </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom two clearfix">
+      <ul class="clearfix">
+       <li class="first" ><a href="" class="list">首页</a></li>
+        <li ><a href="" class="list">品牌动向</a></li>
+        <li ><a href="" class="list">新品资讯</a></li>
+        <li class="list-item"><a href="" class="list"> 春夏大减价</a>
+             <div class="menu" data-index="3">
+       <div class="menu-box"><h4>BIG SALE</h4>
+       <div class="menu-bottom clearfix">
+        <ul>
+         <li><a href="">5.29主推款</a></li>
+         <li><a href="">6.11主推款</a></li>
+         <li><a href="">7折专区</a></li>
+         <li><a href="">8折专区</a></li>
+       </ul>
+       <ul>
+         <li><a href="" class="menu-bottom-right">9折专区</a></li>
+       </ul>
+      </div>
+     </div>
+     </div>
+        </li>
+        <li class="list-item"><a href="" class="list"> 到店新品</a>
+         <div class="menu">
+           <div class="menu-box"><h4>NEW IN</h4>
+           <div class="menu-bottom clearfix">
+            <ul>
+             <li><a href="">5月14号到店</a></li>
+             <li><a href="">4月30号到店</a></li>
+             <li><a href="">4月16号到店</a></li>
+             <li><a href="">全部新品</a></li>
+           </ul>
+          </div>
+         </div>
+         </div>
+       </li>
+        <li class="list-item"><a href="" class="list">跨界合作 </a>
+         <div class="menu">
+           <div class="menu-box"><h4>IP</h4>
+           <div class="menu-bottom clearfix">
+            <ul>
+             <li><a href="">侏儒兔系列</a></li>
+             <li><a href="">狮子王联名款</a></li>
+           </ul>
+          </div>
+         </div>
+         </div>
+       </li>
+        <li class="list-item"><a href="" class="list">特惠专区</a>
+         <div class="menu">
+           <div class="menu-box"><h4>VIP SALE</h4>
+           <div class="menu-bottom clearfix">
+            <ul>
+             <li><a href="">2件9折 3件8折</a></li>
+             <li><a href="">秒杀专区</a></li>
+             <li><a href="">新品秒杀</a></li>
+           </ul>
+          </div>
+         </div>
+         </div>
+       </li>
+        <li class="list-item"><a href="" class="list">服装</a>
+         <div class="menu">
+           <div class="menu-box"><h4>NEW IN_SHANG</h4>
+           <div class="menu-bottom clearfix">
+            <ul>
+             <li><a href="">T恤/POLO</a></li>
+             <li><a href="">衬衫</a></li>
+             <li><a href="">卫衣</a></li>
+             <li><a href="">夹克</a></li>
+           </ul>
+           <ul>
+             <li><a href="">夹克</a></li>
+             <li><a href="">裤装</a></li>
+             <li><a href="">风衣</a></li>
+             <li><a href="">针织衫</a></li>
+           </ul>
+           <ul>
+             <li><a href="">羽绒服</a></li>
+             <li><a href="">棉衣</a></li>
+             <li><a href="">毛呢大衣</a></li>
+             <li><a href="">西服</a></li>
+           </ul>
+          </div>
+         </div>
+         </div></li>
+        <li class="list-item"><a href="" class="list">鞋/配饰</a>
+         <div class="menu">
+           <div class="menu-box"><h4>SHOES</h4>
+           <div class="menu-bottom clearfix">
+            <ul>
+             <li><a href="">休闲鞋</a></li>
+             <li><a href="">凉鞋/拖鞋</a></li>
+             <li><a href="">包包</a></li>
+             <li><a href="">帽</a></li>
+           </ul>
+           <ul>
+             <li><a href="">袜</a></li>
+             <li><a href="">其他配饰</a></li>
+           </ul>
+          </div>
+         </div>
+         </div></li>
+        <li><p>客服营业时间 : 9:00-18:00</p></li>
+      </ul>
+   </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <a href="" class="col-md-12 big">
+          <img src="./images/20200608153952065.jpg" alt="">
+        </a>
+            <div class="cell col-md-3">
+              <a href="">
+                <img src="./images/img2.jpg" alt="">
+                <p>4月来了，帅气衬衫正当时！</p>
+              </a>
+            </div>
+            <div class="cell col-md-3">
+              <a href="">
+                <img src="./images/img3.jpg" alt="">
+                <p>相信我,「细节」才是男人的魅力宝藏</p>
+              </a>
+            </div>
+            <div class="cell col-md-3">
+              <a href="">
+                <img src="./images/img4.jpg" alt="">
+                <p>潮流战「疫」，口罩不碍帅气</p>
+              </a>
+            </div>
+            <div class="cell col-md-3">
+              <a href="">
+                <img src="./images/img5.jpg" alt="">
+                <p>春已至，相信我，该为出门做打算了！</p>
+              </a>
+            </div>
+            <div class="extra col-md-12">
+              <a href="">更多<span class="iconfont icon-youjiantou"></span></a>
+            </div>
+            <div class="product col-md-12">
+              <p><span>Product</span>&nbsp;&nbsp; <span>产品</span></p>
+            </div>
+            <div class="product-img col-md-12">
+              <div class="row">
+                <div class="t-shirt col-md-2">
+                  <a href=""><img src="./images/img6.png" alt=""></a>
+                  <span>T恤</span>
+                </div>
+                <div class="t-shirt col-md-2">
+                  <a href=""><img src="./images/img7.png" alt=""></a>
+                  <span>衬衫</span>
+                </div>
+                <div class="t-shirt col-md-2">
+                  <a href=""><img src="./images/img8.png" alt=""></a>
+                  <span>卫衣</span>
+                </div>
+                <div class="t-shirt col-md-2">
+                  <a href=""><img src="./images/img9.png" alt=""></a>
+                  <span>风衣</span>
+                </div>
+                <div class="t-shirt col-md-2">
+                  <a href=""><img src="./images/img10.png" alt=""></a>
+                  <span>裤装</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="product col-md-12">
+              <p><span>Brand News</span>&nbsp;&nbsp; <span> 品牌动向</span></p>
+            </div>
+            <div class="cell col-md-4 ">
+              <a href="">
+                <img src="./images/1.jpg" alt="">
+                <p class="p-tre">TRENDIANO 冬季大片丨高级感归于日常</p>
+              </a>
+            </div>
+            <div class="cell col-md-4 ">
+              <a href="">
+                <img src="./images/2.jpg" alt="">
+                <p class="p-tre">2019 FALL丨TRENDIANO×LUCKY BLUE SMITH 回归</p>
+              </a>
+            </div>
+            <div class="cell col-md-4 ">
+              <a href="">
+                <img src="./images/3.jpg" alt="">
+                <p class="p-tre">2019 FALL丨TRENDIANO×LUCKY BLUE SMITH 回归</p>
+              </a>
+            </div>
+            <div class="cell col-md-4 ">
+              <a href="">
+                <img src="./images/4.jpg" alt="">
+                <p class="p-tre">2019 FALL丨TRENDIANO×LUCKY BLUE SMITH 回归</p>
+              </a>
+            </div>
+            <div class="cell col-md-4 ">
+              <a href="">
+                <img src="./images/5.jpg" alt="">
+                <p class="p-tre">2019 FALL丨TRENDIANO×LUCKY BLUE SMITH 回归</p>
+              </a>
+            </div>
+            <div class="cell col-md-4 ">
+              <a href="">
+                <img src="./images/6.jpg" alt="">
+                <p class="p-tre">2019 FALL丨TRENDIANO×LUCKY BLUE SMITH 回归</p>
+              </a>
+            </div>
+            <div class="extra col-md-12">
+              <a href="">更多<span class="iconfont icon-youjiantou"></span></a>
+            </div>
+            <div class="product col-md-12">
+              <p><span>New In</span>&nbsp;&nbsp; <span>  新品资讯</span></p>
+              </div>
+              <div class="cell col-md-3">
+                <a href="">
+                  <img src="./images/img2.jpg" alt="">
+                  <p>4月来了，帅气衬衫正当时！</p>
+                </a>
+              </div>
+              <div class="cell col-md-3">
+                <a href="">
+                  <img src="./images/img3.jpg" alt="">
+                  <p>相信我,「细节」才是男人的魅力宝藏</p>
+                </a>
+              </div>
+              <div class="cell col-md-3">
+                <a href="">
+                  <img src="./images/img4.jpg" alt="">
+                  <p>潮流战「疫」，口罩不碍帅气</p>
+                </a>
+              </div>
+              <div class="cell col-md-3">
+                <a href="">
+                  <img src="./images/img5.jpg" alt="">
+                  <p>春已至，相信我，该为出门做打算了！</p>
+                </a>
+              </div>
+              <div class="extra col-md-12">
+                <a href="">更多<span class="iconfont icon-youjiantou"></span></a>
+              </div>
+        </div>
+    </div>
+  </div>
+  <div class="fanhui">
+    <div class="top"> <a href="">Top</a></div>
+   
+    <div class="shouye"><a href="./index.html">返回首页</a></div>
+  </div>
+  <div class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="footer-top-box col-md-12">
+            <div class="row">
+              <div class="date col-md-3">
+                <div class="date-box"><h3>活动日历</h3>
+                <img src="./images/footer3_03.jpg" alt=""></div>
+                
+                <div class="line"></div>
+              </div>
+              <div class="weixin col-md-3">
+                <div class="date-box">
+                  <h3>官方微信</h3>
+                  <img src="./images/footer4.png" alt="">
+                  <h3>关注微博</h3>
+                  <a href=""><span class="iconfont icon-weibo weibo"></span>关注@TRENDIANO官方微博</a>
+                </div>
+              </div>
+              <div class="brand col-md-3">
+                <div class="date-box">
+                  <h3>品牌咨询</h3>
+                  <img src="./images/footer5.jpg" alt="">
+                </div>
+              </div>
+              <div class="about col-md-3">
+                <div class="date-box">
+                  <h3>ABOUT&nbsp;&nbsp; US</h3>
+                  <ul>
+                   <li> <a href="">购物流程</a>&nbsp;&nbsp; <a href="">支付方式</a></li>
+                    <li><a href="">退货流程</a>&nbsp;&nbsp; <a href="">配送说明</a></li>
+                    <li><a href="">关于我们</a></li>
+                  </ul>
+                  <ul>
+                    <li><span class="iconfont icon-zaixiankefu"></span>&nbsp;&nbsp;联系客服</li>
+                    <li><span class="iconfont icon-dianhua"></span>&nbsp;&nbsp;客服400-880-0086</li>
+                    <li><span class="iconfont icon-icon-test"></span>&nbsp;&nbsp7天无条件退货</li>
+                  </ul>
+                  <img src="./images/footer2_06.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <div class="footer-bottom">
+     <div class="inner clearfix">
+       <p class="trend">TRENDIANO</p>
+       <div class="yinsi">
+         <p><a class="yinsi-text" href="">隐私声明</a>&nbsp;&nbsp;<a class="yinsi-text" href="">联系我们</a></p>
+         <p>Copyright @ 2010-2020 广州赫基信息科技有限公司版权所有 </p>
+         <p><a href="">粤ICP备10229258号-4</a>&nbsp;&nbsp;<a href=""><img src="./images/footer.png" alt="">粤公网安备44010602001993号</a></p>
+       </div>
+     </div>
+   </div>
+  </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script>
+     $('.top').click(function(){
+       $('body,html').animate({scrollTop:0},500)
+     })
+     $(window).scroll(function(){
+       if($(window).scrollTop()>30){
+         $('.header').css('display','none')
+         $('.two').css('display','block')
+         $('.top').css('display','block')
+       }else{
+        $('.header').css('display','block')
+         $('.two').css('display','none')
+         $('.top').css('display','none')
+       }
+     })
+    </script>
+  </body>
+</html>

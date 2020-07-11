@@ -1,0 +1,139 @@
+.header {
+  width: 100%;
+  background-color: black;
+}
+.header-top {
+  position: relative;
+}
+.header h1 {
+  padding-top: 20px;
+  float: right;
+  padding-right: 30px;
+}
+.header h1 .tre {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+}
+
+.header .reg-sea ul {
+  list-style: none;
+  margin-top: 15px;
+  float: right;
+}
+.header .reg-sea ul li {
+  float: left;
+  color: #a0a0a0;
+}
+.header .reg-sea ul li a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+.header .reg-sea ul li a:hover {
+  color: orange;
+}
+.header .reg-sea ul li .shu {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header .reg-sea ul li .icon {
+  padding-left: 15px;
+  padding-right: 5px;
+  color: orange;
+}
+.header .search {
+  float: right;
+  padding-bottom: 0;
+  color: #a0a0a0;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+.header .search .find {
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #a0a0a0;
+  border-radius: 3px;
+  height: 30px;
+}
+.header-bottom {
+  background-color: black;
+}
+.header-bottom ul {
+  margin-bottom: 0;
+  list-style: none;
+  /* position: relative; */
+}
+.header-bottom ul li {
+  padding-top: 20px;
+  float: left;
+  margin-right: 25px;
+}
+.header-bottom ul li:last-child {
+  float: right;
+}
+.header-bottom ul li:last-child {
+  margin-right: 0;
+}
+.header-bottom ul li .list {
+  text-decoration: none;
+  color: white;
+}
+.header-bottom ul li .list:hover {
+  color: orange;
+}
+.menu {
+  z-index: 5;
+  opacity: 0;
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  left: 0;
+  position: absolute;
+
+  /* background-color: black; */
+}
+/* .menu:first-child {
+  display: block;
+} */
+.menu-box {
+  position: absolute;
+  left: 220px;
+}
+.menu-box h4 {
+  padding-bottom: 5px;
+  padding-top: 20px;
+  width: 1170px;
+  color: #6b6b6b;
+  font-size: 24px;
+  border-bottom: 1px solid #6b6b6b;
+}
+.menu .menu-bottom ul {
+  padding-top: 10px;
+  padding-left: 0;
+  float: left;
+}
+/* .menu .menu-bottom ul:last-child{
+  margin-left: 40px;
+}  */
+.header-bottom .menu li {
+  float: none;
+}
+.header-bottom .menu li:last-child {
+  float: left;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+.menu li a:hover {
+  background-color: #6b6b6b;
+  color: orange;
+}
+.header-bottom p {
+  padding-right: 30px;
+  float: right;
+  color: white;
+}

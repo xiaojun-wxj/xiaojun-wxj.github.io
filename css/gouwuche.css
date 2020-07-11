@@ -1,0 +1,239 @@
+ .header {
+        background-color: #fff;
+        height: 40px;
+        position: relative;
+      }
+      .header .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .header a {
+        display: block;
+        text-decoration: none;
+      }
+
+      h1 a {
+        display: block;
+        font-weight: 700;
+        font-size: 25px;
+        color: #666;
+        position: absolute;
+        left: 60%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .header ul {
+        line-height: 40px;
+        margin-right: 20px;
+        float: right;
+        /* padding-top: 12px; */
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+      .header ul li {
+        float: left;
+        margin-left: 10px;
+      }
+      .header ul li a {
+        color: black;
+      }
+      .section {
+        padding-top: 20px;
+        background-color: #f4f3f3;
+      }
+      .section .container {
+        border-top: 3px solid black;
+        background-color: #fff;
+      }
+
+      .section-top {
+        text-align: center;
+      }
+      h4 {
+        padding: 20px 0;
+        text-align: center;
+      }
+      .youhui {
+        height: 30px;
+        background-color: #bb8808;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .youhui p {
+        color: white;
+        line-height: 30px;
+      }
+      .tab {
+        width: 100%;
+      }
+      .tab tr {
+        border-bottom: 1px solid #f4f3f3;
+      }
+      .tab thead tr {
+        padding: 10px 0;
+      }
+      .tab thead th {
+        text-align: center;
+      }
+      .tab .check {
+        float: left;
+        margin-left: 60px;
+        margin-top: 55px;
+      }
+      .tab span {
+        display: block;
+        float: left;
+      }
+
+      .section .quanxuan {
+        background-color: #f4f3f3;
+        padding-bottom: 20px;
+      }
+      .quanxuan a {
+        text-decoration: none;
+        color: #0d5b82;
+        padding-left: 15px;
+      }
+      .page {
+        padding: 20px 0;
+        text-align: center;
+        color: #069;
+        font-weight: 700;
+      }
+      .jiesuan {
+        padding: 20px 0;
+        text-align: right;
+      }
+      .jiesuan span {
+        font-size: 24px;
+      }
+      .jiesuan .zongji {
+        color: #d7261c;
+      }
+      .jiesuan button {
+        width: 126px;
+        background-color: #bc8808;
+        color: white;
+        border: none;
+      }
+      .footer {
+        background-color: #f4f3f3;
+      }
+      .footer-box {
+        text-align: center;
+      }
+      h2 {
+        margin-top: 80px;
+        margin-bottom: 20px;
+      }
+      .footer-box p {
+        color: #666;
+      }
+      .footer-box a {
+        padding-left: 5px;
+        text-decoration: none;
+        color: #666;
+      }
+      thead tr .mingcheng {
+        text-align: left;
+      }
+      tbody tr .duoxuan {
+        margin-left: 40px;
+      }
+      .num-top {
+        width: 50px;
+        height: 20px;
+        border: solid 1px #666;
+        margin-left: 72px;
+        position: relative;
+        padding-left: 20px;
+      }
+      .num-bottom a {
+        text-decoration: none;
+        color: #0d5b82;
+      }
+      .num-bottom .shoucang {
+        margin-left: -36px;
+      }
+      .shang,
+      .xia {
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        color: #333333;
+      }
+      .shang {
+        top: -5px;
+      }
+      .xia {
+        top: 4px;
+      }
+      .yanse-size {
+        padding-left: 24px;
+      }
+      .danjia,
+      .xiaoji {
+        padding-top: 5px;
+        text-align: center;
+      }
+      tbody td:nth-child(3) a,
+      tbody td:nth-child(4) a {
+        text-decoration: none;
+        color: #0d5b82;
+      }
+      .yanse-size {
+        position: relative;
+      }
+      .size-box {
+        display: none;
+        position: absolute;
+        padding-top: 20px;
+        background-color: #fff;
+        border: 1px solid #efefef;
+        left: -220px;
+        top: 80px;
+        z-index: 5;
+        box-shadow: 2px 2px 4px #efefef;
+      }
+      tbody tr:nth-child(4) .size-box,
+      tbody tr:nth-child(5) .size-box {
+        left: -50px;
+      }
+      .size-box h3 {
+        font-size: 18px;
+        text-align: left;
+      }
+      .rechoose-item {
+        float: left;
+        margin: 0 60px;
+      }
+      .size-box .rechoose-item:last-child {
+        margin-right: 0;
+      }
+      .choose-size a {
+        display: block;
+        float: left;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid black;
+        text-align: center;
+        margin-left: 10px;
+      }
+      .choose-size a:nth-child(1) {
+        margin-left: -10px;
+      }
+      .choose-btn {
+        margin: 10px 0;
+        text-align: center;
+      }
+      .no {
+        margin-left: 20px;
+      }
+      .yes,
+      .no {
+        background-color: #bc8808;
+        color: white;
+        border: 1px solid #bc8808;
+      }

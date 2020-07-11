@@ -1,0 +1,269 @@
+.home {
+  width: 100%;
+  height: 40px;
+  background-color: #313131;
+  line-height: 40px;
+}
+.home a {
+  padding-left: 20%;
+}
+.home a span {
+  text-decoration: none;
+  color: white;
+}
+.home a:hover span {
+  color: orange;
+}
+.home span {
+  color: #999;
+}
+.menu {
+  z-index: -1;
+}
+.little{
+  position: relative;
+}
+.section .main-banner ul{
+  list-style: none;
+  padding-left: 0;
+}
+.big-pic {
+width: 400px;
+height: 500px;
+position: absolute;
+z-index: 6;
+left: 550px;
+top: 0;
+overflow: hidden;
+/* display: block;
+float: left; */
+display: none;
+}
+.big-pic img {
+/* display: block; */
+width: 800px;
+/* height: 1350px; */
+position: absolute;
+}
+.main-banner{
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
+  height: 530px;
+}
+.little{
+ width: 330px;
+  position: relative;
+}
+.little img{
+  width: 300px;
+}
+.shade {
+position: absolute;
+width: 200px;
+height: 200px;
+background-color: white;
+cursor: move;
+opacity: 0.5;
+top: 0;
+left: 0;
+display: none;
+}
+.arrow-up{
+  position: absolute;
+  
+}
+.arrow-down{
+  position: absolute;
+  bottom: 0;
+}
+.trendiano a{
+  text-decoration: none;
+  color: black;
+}
+.trendiano .title{
+  font-size: 24px;
+  padding-top: 60px;
+}
+.trendiano .dazhe span{
+  font-size: 11px;
+  color: #aaa;
+}
+.trendiano .money{
+  font-size: 30px;
+  color: #a40035;
+}
+.trendiano .color img{
+  border: 2px white solid;
+  margin-left: 5px;
+  padding: 2px 2px;
+}
+.trendiano .color img:last-child{
+  border: 2px #999 solid;
+}
+.trendiano .color .mibai:hover{
+  border: 2px #eee solid;
+}
+.size{
+  margin-top: 10px;
+}
+.size span{
+  display: block;
+  float: left;
+ line-height: 30px;
+}
+.size ul{
+  padding-left: 0;
+  float: left;
+  list-style: none;
+}
+.size ul li{
+  float: left;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  padding-bottom: 0;
+}
+.size ul li:hover{
+  background-color: #eee;
+}
+.size ul li a{
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+.size .chima{
+  display: block;
+  text-align: center;
+  float: left;
+  line-height: 30px;
+  margin-left: 15px;
+}
+.size .chima:hover{
+  color: peru;
+}
+.size .chima span{
+  font-size: 35px;
+  
+}
+.goumai a{
+  margin-left: 10px;
+}
+.goumai a:hover{
+  color: peru;
+}
+.goumai a:last-child{
+  margin-left: 30px;
+}
+.goumai a img{
+  padding-right: 5px;
+}
+.goumai a span{
+  color: peru;
+  padding-right: 5px;
+}
+.trendiano h6{
+ text-decoration: underline;
+ margin-top: 20px;
+}
+.trendiano button{
+  margin-top: 10px;
+  background-color: white;
+  width: 428px;
+  border: 1px solid black;
+  line-height: 40px;
+  border-radius: 2px;
+}
+.trendiano button:hover{
+  border: 1px peru solid;
+  color: peru;
+}
+.fenxiang{
+  margin-top: 10px;
+  float: right;
+  padding-right: 25px;
+}
+.fenxiang a{
+  color: #aaa;
+}
+.fenxiang a:hover{
+  color: peru;
+}
+.fenxiang a span{
+  font-size: 20px;
+}
+.text{
+  margin-top: 40px;
+}
+.text .text-left{
+  padding-right: 45px;
+}
+
+.text .text-left ul{
+ list-style: none;
+ padding-left: 0;
+ color: #666;
+ font-size: 12px;
+}
+.text-left .name ul{
+padding-left: 60%;
+}
+.text-left .name ul:last-child{
+ padding-top: 22px;
+}
+.text-left li{
+ margin-bottom: 10px;
+}
+.text-right{
+ padding-left: 60px;
+ text-align:left;
+border-left: 1px solid #eee;
+}
+.text-right p{
+
+color: #666;
+ font-size: 12px;
+}
+.xidi .biaozhi{
+margin-top: -30px;
+padding-left: 60px;
+}
+.xidi .biaozhi img{
+width: 73px;
+}
+.view ul{
+list-style: none;
+}
+
+.view li a:first-child{
+display: block;
+height: 225px;
+position: relative;
+border-bottom: 1px solid #eee;
+
+}
+.view li a img{
+width: 126px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.up{
+opacity: 1;
+}
+.down{
+opacity: 0;
+}
+.view .view-text{
+text-decoration: none;
+}
+.view-text h6{
+color: #999;
+}
+.view-text p{
+color: black;
+font-size: 14px;
+}
